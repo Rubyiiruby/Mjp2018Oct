@@ -1,10 +1,3 @@
-$(window).on("load", function() {
-    var h = $(window).height();
-    $('#loading').height(h);
-    setTimeout(function() { $('#loading').fadeOut(); }, 1500);
-    $('html, body').animate({ scrollTop: 0 }, 1);
-});
-
 $(function() {
     // Section One Height
     var windowH = $(window).height();
