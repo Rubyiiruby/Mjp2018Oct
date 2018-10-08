@@ -327,14 +327,14 @@ Copyright (c) 2013 Daniel Eden
 }
 
 .sliderArea .sliderWrapper.fadeInUp {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .sliderArea .sliderWrapper .titleSticker.fadeInLeft,
 .sliderArea .sliderWrapper .titleSticker.fadeInRight {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .bloggerSlider li.flipInY {

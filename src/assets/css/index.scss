@@ -32,6 +32,24 @@
     }
 }
 
+.wrapper {
+    width: 100%;
+    position: relative;
+    .buttonTop {
+        display: none;
+        position: fixed;
+        width: 68px;
+        bottom: 40px;
+        right: 40px;
+        cursor: pointer;
+        z-index: 20;
+        opacity: .7;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
 .container {
     width: 90%;
     max-width: 1520px;
@@ -76,19 +94,126 @@
             clear: both;
         }
     }
-    .kvMap {
+    .kvMapWrapper {
         width: 59.737%;
-        padding-bottom: 54.803%;
-        position: relative;
-        img {
+        .kvMap {
             width: 100%;
-            height: 100%;
+            padding-bottom: 92%;
+            position: relative;
+            background-image: url(../images/section-01/kvMap.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .location {
+            width: 8%;
+            padding-bottom: 9%;
             position: absolute;
-            top: 0;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+            z-index: 1;
+            cursor: pointer;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media screen and (min-width: 1025px) {
+                &:hover {
+                    transform: translate(0, -10px);
+                }
+            }
+        }
+        .location1 {
+            top: 13%;
+            left: 42.5%;
+            background-image: url(../images/section-01/kvMap-location1.svg);
+            background-size: cover;
+        }
+        .location2 {
+            top: 26.5%;
+            left: 29.5%;
+            background-image: url(../images/section-01/kvMap-location2.svg);
+            background-size: cover;
+        }
+        .location3 {
+            top: 7%;
+            right: 30%;
+            background-image: url(../images/section-01/kvMap-location3.svg);
+            background-size: cover;
+        }
+        .location4 {
+            top: 21.5%;
+            right: 21.5%;
+            background-image: url(../images/section-01/kvMap-location4.svg);
+            background-size: cover;
+            z-index: 9;
+        }
+        .location5 {
+            right: 27.5%;
+            top: 41.5%;
+            background-image: url(../images/section-01/kvMap-location5.svg);
+            background-size: cover;
+            z-index: 11;
+        }
+        .location6 {
+            left: 40.5%;
+            bottom: 34.5%;
+            background-image: url(../images/section-01/kvMap-location6.svg);
+            background-size: cover;
+            z-index: 11;
+        }
+        .location7 {
+            bottom: 16%;
+            left: 31%;
+            background-image: url(../images/section-01/kvMap-location7.svg);
+            background-size: cover;
+        }
+        .kvMap-bicycle {
+            display: none;
+            width: 18%;
+            padding-bottom: 11%;
+            position: absolute;
+            top: 37%;
+            left: 42%;
+            background-image: url(../images/section-01/kvMap-bicycle.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #motionPath {
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translate(-5%, -59%);
+            -ms-transform: translate(-5%, -59%);
+            transform: translate(-5%, -59%);
             right: 0;
             left: 0;
-            bottom: 0;
+            margin: 0 auto;
+            z-index: 10;
         }
+        .motion-path {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .bicycleAnimation {
+            position: absolute;
+            width: 30%;
+            margin-top: -15%;
+            margin-left: -15%;
+            img {
+                width: 100%;
+            }
+        }
+        // @media screen and (min-width: 1025px) {
+        //     .location:hover {
+        //         -webkit-transform: translate(0, -10px);
+        //         -ms-transform: translate(0, -10px);
+        //         transform: translate(0, -10px);
+        //     }
+        // }
     }
     .kvSlogan {
         float: right;
@@ -259,6 +384,7 @@
         letter-spacing: 0.2em;
         padding: 3% 0;
         position: relative;
+        z-index: 2;
         .titleSticker {
             width: 50%;
             max-width: 230px;
@@ -415,6 +541,8 @@
             display: inline-block;
             padding: 0 3% 4%;
             text-align: center;
+            transition: all 0.3s;
+            vertical-align: top;
             &:nth-child(4n+1) {
                 margin-left: 0;
             }
@@ -426,14 +554,20 @@
                 padding: 10px;
                 background-color: #ffffff;
                 box-shadow: -3px 3px 0px #c9c9c9;
+                min-height: 288px;
             }
             img {
                 margin-bottom: 10px;
             }
             p {
-                font-size: 28px;
+                font-size: 20px;
                 line-height: 1.44em;
                 color: #333333;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
         // Slick settings
@@ -543,6 +677,12 @@
                 display: inline-block;
                 vertical-align: middle;
                 margin: 35px 39px;
+                transition: all 0.3s;
+                @media screen and (min-width: 1025px) {
+                    &:hover {
+                        opacity: .6;
+                    }
+                }
             }
         }
     }
@@ -638,6 +778,12 @@ footer {
 }
 
 // Responsive settings
+@media screen and (max-width: 1499px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 300px;
+    }
+}
+
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
     .sectionOne .kvMiddle {
         width: 80%;
@@ -663,6 +809,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 270px;
+    }
+}
+
 @media screen and (max-width: 1024px) and (orientation:portrait) {
     .sectionOne {
         .kvSlogan {
@@ -675,11 +827,10 @@ footer {
                 top: 19%;
             }
         }
-        .kvMap {
+        .kvMapWrapper {
             display: block;
             width: 90%;
             margin: 0 auto;
-            padding-bottom: 82.6%;
         }
     }
 }
@@ -688,24 +839,6 @@ footer {
     .subTitle img {
         max-height: 90px;
     }
-    // .sectionOne {
-    //     .kvSlogan {
-    //         display: block;
-    //         float: none;
-    //         width: 45%;
-    //         margin: 0 auto;
-    //         padding: 5% 0;
-    //         &::after {
-    //             top: 19%;
-    //         }
-    //     }
-    //     .kvMap {
-    //         display: block;
-    //         width: 90%;
-    //         margin: 0 auto;
-    //         padding-bottom: 82.6%;
-    //     }
-    // }
     .routeMap {
         >div {
             max-width: 514px;
@@ -801,6 +934,24 @@ footer {
     }
 }
 
+@media screen and (max-width: 999px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 296px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: auto;
+    }
+}
+
 @media screen and (max-width: 767px) and (orientation:portrait) {
     .sectionOne .kvSlogan {
         width: 70%;
@@ -826,6 +977,14 @@ footer {
             &.visible-phone {
                 display: block;
             }
+        }
+    }
+    .kvMapWrapper .kvMap {
+        .kvMap-bicycle {
+            display: block;
+        }
+        #motionPath {
+            display: none;
         }
     }
     .routeMap {
@@ -942,5 +1101,23 @@ footer {
                 content: none;
             }
         }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 230px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .bloggerWrapper .bloggerSlider li a {
+        min-height: 170px;
     }
 }

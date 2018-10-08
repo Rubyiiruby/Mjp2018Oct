@@ -254,15 +254,12 @@ Copyright (c) 2013 Daniel Eden
     }
     .sliderWrapper {
         &.fadeInUp {
-            animation-delay: .6s;
+            animation-delay: .3s;
         }
         .titleSticker.fadeInLeft,
         .titleSticker.fadeInRight {
-            animation-delay: 1s;
+            animation-delay: .3s;
         }
-        // .areaPic.fadeIn {
-        //     animation-delay: 1.2s;
-        // }
     }
 }
 

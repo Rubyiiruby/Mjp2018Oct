@@ -85,6 +85,65 @@ $(function() {
         $('#overlay').removeClass('open');
     });
 
+    // Map location click
+
+    $('.location1').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location01').offset().top - 60
+        }, 'slow');
+    });
+
+    $('.location2').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location02').offset().top - 60
+        }, 'slow');
+    });
+
+    $('.location3').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location03').offset().top - 60
+        }, 'slow');
+    });
+
+    $('.location4').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location04').offset().top - 60
+        }, 'slow');
+    });
+
+    $('.location5').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location05').offset().top - 60
+        }, 'slow');
+    });
+
+    $('.location6').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location06').offset().top - 60
+        }, 'slow');
+    });
+
+    $('.location7').on('click', function() {
+        $('html,body').animate({
+            scrollTop: $('#location07').offset().top - 60
+        }, 'slow');
+    });
+
+    // Button top
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        $(window).on('scroll', function() {
+            if ($(this).scrollTop() < 1000) {
+                $('.buttonTop').css('display', 'none');
+            } else {
+                $('.buttonTop').css('display', 'block');
+            }
+        });
+        $('.buttonTop').on('click', function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 'slow');
+        });
+    }
 
     //slick
     $('#areaTxtList01').slick({
