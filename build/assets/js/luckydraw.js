@@ -4,23 +4,23 @@ $(function () {
 
     // Menu change when click
     $('.menuRoute').click(function () {
-        window.location = "/index.html#sectionRoute";
+        window.location = "/matsueshi/2018/luckydraw/index.html#sectionRoute";
     });
 
     $('.menuArea').click(function () {
-        window.location = "/index.html#sectionArea";
+        window.location = "/matsueshi/2018/luckydraw/index.html#sectionArea";
     });
 
     $('.menuBlogger').click(function () {
-        window.location = "/index.html#sectionBlogger";
+        window.location = "/matsueshi/2018/luckydraw/index.html#sectionBlogger";
     });
 
     $('.menuFlight').click(function () {
-        window.location = "/index.html#sectionFlight";
+        window.location = "/matsueshi/2018/luckydraw/index.html#sectionFlight";
     });
 
     $('.menuLottery').click(function () {
-        window.location = "/index.html#sectionLottery";
+        window.location = "/matsueshi/2018/luckydraw/index.html#sectionLottery";
     });
 
     // Menu hamburger
