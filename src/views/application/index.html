@@ -20,13 +20,13 @@
             </div>
             <div class="kvMapWrapper">
                 <div class="kvMap">
-                    <div class="location location1"></div>
-                    <div class="location location2"></div>
-                    <div class="location location3"></div>
-                    <div class="location location4"></div>
-                    <div class="location location5"></div>
-                    <div class="location location6"></div>
-                    <div class="location location7"></div>
+                    <div class="location location1" data-location="location01"></div>
+                    <div class="location location2" data-location="location02"></div>
+                    <div class="location location3" data-location="location03"></div>
+                    <div class="location location4" data-location="location04"></div>
+                    <div class="location location5" data-location="location05"></div>
+                    <div class="location location6" data-location="location06"></div>
+                    <div class="location location7" data-location="location07"></div>
                     <div class="kvMap-bicycle"></div>
                     <div id="motionPath">
                         <div class="motion-path" style="position: relative;">
@@ -53,21 +53,21 @@
                         <div class="routeWording">結緣路線街道單車路線</div>
                     </div>
                     <img src="assets/images/section-02/routeMap01.jpg" alt="">
-                    <a href="https://www.kankou-shimane.com/cycling/cyclingroute/enmusubikaido/" target="_blank">了解更多</a>
+                    <a href="https://www.kankou-shimane.com/cycling/cyclingroute/enmusubikaido/" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Ride', 'event_label': 'Ride1'});">了解更多</a>
                 </div>
                 <div class="routeMap2 wow fadeInUp">
                     <div class="routeCircle">
                         <div class="routeWording">中海周遊<br class="hidden-phone" />單車路線</div>
                     </div>
                     <img src="assets/images/section-02/routeMap02.jpg" alt="">
-                    <a href="https://www.kankou-shimane.com/cycling/cyclingroute/nakaumi/" target="_blank">了解更多</a>
+                    <a href="https://www.kankou-shimane.com/cycling/cyclingroute/nakaumi/" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Ride', 'event_label': 'Ride2'});">了解更多</a>
                 </div>
                 <div class="routeMap3 wow fadeInUp">
                     <div class="routeCircle">
                         <div class="routeWording">山波街道<br class="hidden-phone" />單車路線</div>
                     </div>
                     <img src="assets/images/section-02/routeMap03.jpg" alt="">
-                    <a href="https://www.kankou-shimane.com/cycling/cyclingroute/yamanamikaido/" target="_blank">了解更多</a>
+                    <a href="https://www.kankou-shimane.com/cycling/cyclingroute/yamanamikaido/" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Ride', 'event_label': 'Ride3'});">了解更多</a>
                 </div>
             </section>
 
@@ -206,41 +206,73 @@
         </div>
     </div>
 
-    <!-- <div class="sectionThree">
+    <div class="sectionThree">
         <div class="container">
             <section class="sliderArea">
-                article 06
+                <!-- article 06 -->
                 <article id="location06" class="sliderWrapper wow fadeInUp">
                     <div class="areaTxt">
                         <div class="titleSticker wow fadeInRight"><img src="assets/images/section-03/titleSticker-6.png" alt=""></div>
                         <ul class="areaTxtList" id="areaTxtList06">
                             <li>尾道市位於廣島縣東南部，面向瀨戶內海連接四國，地理位置上無論到廣島、岡山或四國都十分方便。尾道地區由於在過去遠離了戰火，所以至今還存留保有以前風貌的寺院，甚至被稱為「西之小京都」，留有從中世紀至今的建築物與文化財，創造出獨特的景觀。
                             </li>
+                            <li><span class="locationName">千光寺公園</span>尾道市最著名的觀光景點，這裡除了是「日本櫻花百選名所」之外，在山頂展望台上還可以一覽尾道市街道及瀨戶內的風景，由於夜晚的景色相當迷人,因此也被選為「夜景100選」之一，另外也可以漫遊文學小徑及安藤忠雄設計的尾道市立美術館參觀。</li>
+                            <li><span class="locationName">貓之細道</span>沿著艮神社東側往天寧寺來到「貓之細道」，聽說千光寺四周有許多貓咪出沒，因此這條約有200公尺長的小路才有此名，沿途除了有機會與貓咪相遇之外，小路上還擺放了上百個福貓石以及咖啡店等小店。</li>
+                            <li><span class="locationName">耕三寺博物館</span>耕三寺耕三和尚興建了紀念母親的菩提寺（淨土真宗本願寺派的寺院）。自1936年起費時30多年，以許多國寶建築為範本建造,其中有15棟被登錄國家有形文化財,展示許多重要文化財產和重要美術品，園區內還有占地5,000㎡大理石建造的美麗庭園「未來心之丘」。</li>
+                            <li><span class="locationName">天寧寺</span>位於千光寺山半山腰的「天寧寺」，境內的海雲塔三重塔是國家的重要文化財。在五百羅漢像並列的羅漢堂中可以參加坐禪體驗，春季時也是欣賞櫻花及牡丹花的景點之一。</li>
+                            <li><span class="locationName">尾道市立美術館</span>千光寺公園內的「尾道市立美術館」是由建築名家安藤忠雄設計，充滿現代極簡設計感，並展示尾道出生作家及世界名畫等作品，在館內的咖啡店及陽台還可以一覽尾道水道及瀨戶內風景。</li>
+                            <li><span class="locationName">尾道本通商店街</span>尾道本通商店街的東西巷約有1.2公里長，由一番街、中商店街、本町中心街、中央街、尾道本通等5個街道組成，南北巷則穿插著許多細長的小路，街道上除了有許多咖啡及美食小店之外，每年也有許多活動在此舉辦，整個商店街散發著尾道獨特的懷舊風情。</li>
+                            <li><span class="locationName">新尾道大橋</span>連接本州與向島之間的斜張橋，55公尺東側處有尾道大橋，因此有兄弟橋・親子橋之稱。</li>
+                            <li><span class="locationName">因島大橋</span>連結向島與因島之間的吊橋，分成上下兩層車道，分別給汽車及自行車與行人使用。</li>
+                            <li><span class="locationName">多多羅大橋</span>連接尾道市的生口島及今治市的大三島之間，建設當時是世界最長的斜張橋，有如大鳥展翅般的設計非常迷人，另外也與法國的諾曼第橋結緣為姊妹橋。</li>
                         </ul>
                     </div>
                     <div class="areaPic">
                         <ul id="areaPicList06">
                             <li><img src="assets/images/section-03/slider6/pic-00.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-01.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-02.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-03.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-04.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-05.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-06.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-07.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-08.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider6/pic-09.png" alt=""></li>
                         </ul>
                     </div>
                 </article>
-                article 07
+                <!-- article 07 -->
                 <article id="location07" class="sliderWrapper wow fadeInUp">
                     <div class="areaTxt">
                         <div class="titleSticker wow fadeInLeft"><img src="assets/images/section-03/titleSticker-7.png" alt=""></div>
                         <ul class="areaTxtList" id="areaTxtList07">
                             <li>今治市位於愛媛縣東北部，當地造船業興盛，也是愛媛縣的第二大都市。今治城是由戰國武將藤堂高虎所建，是今治市代表性的觀光景點。現在的今治市除了壯觀的瀨戶內海美景，也是有名的高級毛巾產地。擁有歷史、自然、工藝等豐富文化扎根的今治市，充滿了絕美景點和博物館，值得一訪。</li>
+                            <li><span class="locationName">今治城</span>今治城是由戰國武將且是建城的名人-藤堂高虎於1602年建造,將海水引入護城河的設計,可以說是日本屈指可數的海上之城,天守閣內展示著武士用具、古地圖及藩主書畫，在最上層的展望台還可以一覽今治市街景及來島海峽大橋、四國石鎚山景色。城內種植了60株染井吉野櫻花,是有人氣的賞櫻景點亦是日本百大名城之一。</li>
+                            <li><span class="locationName">龜老山展望台</span>位於標高307.8公尺龜老山山頂的展望台,可以欣賞到對岸今治市街景整個來島海峽大橋和來島海峽的潮流等等，是島波海道上知名的景點之一，隨著季節及時間可以欣賞到許多面貌的來島海峽大橋景色。</li>
+                            <li><span class="locationName">來島海峽大橋</span>連接九州到關西瀨戶內航線交通的重要地方，日本三大急潮之一並且橫跨今治及大島，全長4,105m是世界首座三連式吊橋，也是島波海道規模最大的橋。高聳的6座主塔與完美弧形吊索設計的巨大吊橋所帶來的魄力感最為精彩，夜間會打燈,因此不論是白天或夜晚都能欣賞。另外還可以在大島下田水港乘坐「急流觀潮船」體驗來島海峽的急流帶來的刺激感。</li>
+                            <li><span class="locationName">毛巾美術館</span>日本毛巾生產量第一的地方，以毛巾為主題是一間特別的美術館，館內除了參觀毛巾製造過程及展示用毛巾製造出的藝術品之外，也備有咖啡廳及販賣區，另外還可以在歐式花園欣賞四季不同的花。</li>
+                            <li><span class="locationName">村上水軍博物館</span>以戰國時代(日本中世紀),有海上霸主並活耀於瀨戶內海的村上海賊為主題的博物館,能島周邊的海域及宮窪瀬戸激烈的海流彷彿形成一座天然要塞,因此被當作是能島村上海賊的大本營,而館內展示的即為能村上海賊的貴重資料及出土品,另外還能免費體驗試穿鎧甲等活動,在博物館前「能島水軍」還能搭乘觀光船體驗宮窪瀬戸急流的自然景色。</li>
+                            <li><span class="locationName">大三島橋</span>連接大三島與伯方島之間的拱橋，是本州四国連絡橋中最初通車的橋樑，開通之時曾是國內最長的拱橋。</li>
+                            <li><span class="locationName">伯方・大島大橋</span>連接伯方島及大島風光明媚的宮窪瀬戸間的橋樑，伯方橋為桁橋，大島大橋為吊橋。</li>
                         </ul>
                     </div>
                     <div class="areaPic">
                         <ul id="areaPicList07">
                             <li><img src="assets/images/section-03/slider7/pic-00.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-01.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-02.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-03.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-04.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-05.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-06.png" alt=""></li>
+                            <li><img src="assets/images/section-03/slider7/pic-07.png" alt=""></li>
                         </ul>
                     </div>
                 </article>
             </section>
         </div>
-    </div> -->
+    </div>
 
     <div id="sectionBlogger" class="sectionFour">
         <div class="container">
@@ -253,31 +285,31 @@
         <div class="bloggerWrapper">
             <ul class="bloggerSlider">
                 <li class="wow flipInY">
-                    <a href="http://light0130.pixnet.net/blog/category/6729233" target="_blank">
+                    <a href="http://light0130.pixnet.net/blog/category/6729233" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Blogger', 'event_label': 'Blogger1'});">
                         <img src="assets/images/section-04/blogger001.jpg" alt="">
                         <p>小林玉郎子的異想世界</p>
                     </a>
                 </li>
                 <li class="wow flipInY">
-                    <a href="https://runrezu.blogspot.com/2018/03/" target="_blank">
+                    <a href="https://runrezu.blogspot.com/2018/03/" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Blogger', 'event_label': 'Blogger2'});">
                         <img src="assets/images/section-04/blogger002.jpg" alt="">
                         <p>H100體力有限株式會社</p>
                     </a>
                 </li>
                 <li class="wow flipInY">
-                    <a href="http://domi-wang.blogspot.com/search/label/Shimane%20%E5%B3%B6%E6%A0%B9" target="_blank">
+                    <a href="http://domi-wang.blogspot.com/search/label/Shimane%20%E5%B3%B6%E6%A0%B9" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Blogger', 'event_label': 'Blogger3'});">
                         <img src="assets/images/section-04/blogger003.jpg" alt="">
                         <p>ONE BACKPACK</p>
                     </a>
                 </li>
                 <li class="wow flipInY">
-                    <a href="http://blog.creya.net/category/travel-enasia/travel-shimane" target="_blank">
+                    <a href="http://blog.creya.net/category/travel-enasia/travel-shimane" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Blogger', 'event_label': 'Blogger4'});">
                         <img src="assets/images/section-04/blogger004.jpg" alt="">
                         <p>Creya可以呀</p>
                     </a>
                 </li>
                 <li class="wow flipInY">
-                    <a href="https://www.youtube.com/results?search_query=lindalovescycling" target="_blank">
+                    <a href="https://www.youtube.com/results?search_query=lindalovescycling" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Blogger', 'event_label': 'Blogger5'});">
                         <img src="assets/images/section-04/blogger005.jpg" alt="">
                         <p>Linda愛打卡掐</p>
                     </a>
@@ -296,28 +328,28 @@
             <div class="logoWrapper">
                 <ul class="logoList wow fadeInUp">
                     <li>
-                        <a target="_blank" href="http://www.freewing.com.tw/eWeb/GO/L_GO_Type.asp?iSUB_CD=GO&STYLE_TP=1&TWFG=N&s_year=2018&s_month=06&s_day=27&e_year=2018&e_month=12&e_day=27&iMGRUP_CD=TTJ01"><img src="assets/images/section-05/agencyLogo01.png" alt=""></a>
+                        <a target="_blank" href="http://www.freewing.com.tw/eWeb/GO/L_GO_Type.asp?iSUB_CD=GO&STYLE_TP=1&TWFG=N&s_year=2018&s_month=06&s_day=27&e_year=2018&e_month=12&e_day=27&iMGRUP_CD=TTJ01" onclick="gtag('event', 'click', {'event_category': 'Travel', 'event_label': 'Travel1'});"><img src="assets/images/section-05/agencyLogo01.png" alt=""></a>
                     </li>
                     <li>
-                        <a target="_blank" href="http://www.gabriel.com.tw/Journey/shikoku/JKY-2018B/Details"><img src="assets/images/section-05/agencyLogo02.png" alt=""></a>
+                        <a target="_blank" href="http://www.gabriel.com.tw/Journey/shikoku/JKY-2018B/Details" onclick="gtag('event', 'click', {'event_category': 'Travel', 'event_label': 'Travel2'});"><img src="assets/images/section-05/agencyLogo02.png" alt=""></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.travel4u.com.tw/oversea/explain_all.aspx?MGRUP_CD=HIJ062014L"><img src="assets/images/section-05/agencyLogo03.png" alt=""></a>
+                        <a target="_blank" href="https://www.travel4u.com.tw/oversea/explain_all.aspx?MGRUP_CD=HIJ062014L" onclick="gtag('event', 'click', {'event_category': 'Travel', 'event_label': 'Travel3'});"><img src="assets/images/section-05/agencyLogo03.png" alt=""></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.gloriatour.com.tw/EW/GO/MGroupDetail.asp?prodCd=JTTJ5-2018CI "><img src="assets/images/section-05/agencyLogo04.png" alt=""></a>
+                        <a target="_blank" href="https://www.gloriatour.com.tw/EW/GO/MGroupDetail.asp?prodCd=JTTJ5-2018CI" onclick="gtag('event', 'click', {'event_category': 'Travel', 'event_label': 'Travel4'});"><img src="assets/images/section-05/agencyLogo04.png" alt=""></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://travel.liontravel.com/detail?NormGroupID=735939e2-2161-4db9-80a1-327cbd742365&GroupID=18JYO22CIA-T"><img src="assets/images/section-05/agencyLogo05.png" alt=""></a>
+                        <a target="_blank" href="https://travel.liontravel.com/detail?NormGroupID=735939e2-2161-4db9-80a1-327cbd742365&GroupID=18JYO22CIA-T" onclick="gtag('event', 'click', {'event_category': 'Travel', 'event_label': 'Travel5'});"><img src="assets/images/section-05/agencyLogo05.png" alt=""></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.colatour.com.tw/C10A_TourSell/C10A03_TourItinerary.aspx?TourCode=NPA102206CI8&TourDate=2018/10/22&GASource=%E7%B3%BB%E5%88%97%E5%9C%98%E6%9F%A5%E8%A9%A2"><img src="assets/images/section-05/agencyLogo06.png" alt=""></a>
+                        <a target="_blank" href="https://www.colatour.com.tw/C10A_TourSell/C10A03_TourItinerary.aspx?TourCode=NPA102206CI8&TourDate=2018/10/22&GASource=%E7%B3%BB%E5%88%97%E5%9C%98%E6%9F%A5%E8%A9%A2" onclick="gtag('event', 'click', {'event_category': 'Travel', 'event_label': 'Travel6'});"><img src="assets/images/section-05/agencyLogo06.png" alt=""></a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- <div id="sectionLottery" class="sectionSix">
+    <div id="sectionLottery" class="sectionSix">
         <div class="container">
             <div class="KHSlogo wow fadeInLeft"><img src="assets/images/section-06/offerLogo.png" alt=""></div>
             <div class="subTitle wow flipInX">
@@ -326,14 +358,15 @@
             </div>
             <div class="offerContent wow fadeInUp">
                 <p>
-                    由2018/11/12至2018/12/31，凡於全台各功學社特門市購買指定車款，於活動期間憑購買發票至本活動網站登錄，即有機會抽到台北-松江來回機票，讓您漫騎松江，深度感受單車踩踏下松江市的美麗～
+                    自2018/11/12 至 2018/12/31止，於全台各功學社單車特約經銷商消費，不限金額發票，憑購買發票或商品活動序號至本活動網站登錄，即可參加抽獎！有機會抽中功學社單車、免費到山陰松江・瀨戶內島波海道 慢漫騎，深度感受單車踩踏下松江市的美麗～
                 </p>
                 <div class="btnWrapper">
-                    <a href="" class="wow fadeInUp">立即登入</a>
+                    <a href="https://www.khsbicycles.com.tw/products/" target="_blank" class="KHSlink wow fadeInUp">功學社單車產品資訊</a>
+                    <a href="luckydraw.html" class="wow fadeInUp" onclick="gtag('event', 'click', {'event_category': 'Login', 'event_label': 'Login'});">立即登入</a>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <footer>
         <div class="bottomVisual"><img src="assets/images/section-06/bgWave.png" alt=""></div>
     </footer>

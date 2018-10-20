@@ -3,43 +3,65 @@ $(function() {
     var windowH = $(window).height();
     $('.sectionOne').height(windowH);
 
+
+    function sectionScroll(sectionId, time) {
+        return $('html,body').animate({
+            scrollTop: $(sectionId).offset().top - 60
+        }, time);
+    }
+
+
+
+    // Location hash
+    $(window).on('load', function() {
+        var scrollToSection = window.location.hash
+        switch (scrollToSection) {
+            case '#sectionRoute':
+                sectionScroll('#sectionRoute', 2200);
+                break;
+            case '#sectionArea':
+                sectionScroll('#sectionArea', 2200);
+                break;
+            case '#sectionBlogger':
+                sectionScroll('#sectionBlogger', 2200);
+                break;
+            case '#sectionFlight':
+                sectionScroll('#sectionFlight', 2200);
+                break;
+            case '#sectionLottery':
+                sectionScroll('#sectionLottery', 2200);
+                break;
+        }
+    });
+
+
     // Menu change when click
     $('.menuRoute').click(function() {
-        $('html,body').animate({
-            scrollTop: $('#sectionRoute').offset().top - 60
-        }, 'slow');
+        sectionScroll('#sectionRoute', 'slow');
         $('#menu li').removeClass('underLineActive');
         $('.menuRoute').addClass('underLineActive');
     });
 
     $('.menuArea').click(function() {
-        $('html,body').animate({
-            scrollTop: $('#sectionArea').offset().top - 60
-        }, 'slow');
+        sectionScroll('#sectionArea', 'slow');
         $('#menu li').removeClass('underLineActive');
         $('.menuArea').addClass('underLineActive');
     });
 
     $('.menuBlogger').click(function() {
-        $('html,body').animate({
-            scrollTop: $('#sectionBlogger').offset().top - 60
-        }, 'slow');
+        sectionScroll('#sectionBlogger', 'slow');
         $('#menu li').removeClass('underLineActive');
         $('.menuBlogger').addClass('underLineActive');
     });
 
     $('.menuFlight').click(function() {
-        $('html,body').animate({
-            scrollTop: $('#sectionFlight').offset().top - 60
-        }, 'slow');
+        sectionScroll('#sectionFlight', 'slow');
         $('#menu li').removeClass('underLineActive');
         $('.menuFlight').addClass('underLineActive');
     });
 
     $('.menuLottery').click(function() {
-        $('html,body').animate({
-            scrollTop: $('#sectionLottery').offset().top - 60
-        }, 'slow');
+        sectionScroll('#sectionLottery', 'slow');
         $('#menu li').removeClass('underLineActive');
         $('.menuLottery').addClass('underLineActive');
     });
@@ -86,47 +108,10 @@ $(function() {
     });
 
     // Map location click
-
-    $('.location1').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location01').offset().top - 60
-        }, 'slow');
-    });
-
-    $('.location2').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location02').offset().top - 60
-        }, 'slow');
-    });
-
-    $('.location3').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location03').offset().top - 60
-        }, 'slow');
-    });
-
-    $('.location4').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location04').offset().top - 60
-        }, 'slow');
-    });
-
-    $('.location5').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location05').offset().top - 60
-        }, 'slow');
-    });
-
-    $('.location6').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location06').offset().top - 60
-        }, 'slow');
-    });
-
-    $('.location7').on('click', function() {
-        $('html,body').animate({
-            scrollTop: $('#location07').offset().top - 60
-        }, 'slow');
+    $('.kvMap .location').on('click', function() {
+        var $thisAttr = $(this).attr('data-location'),
+            $thisId = '#' + $thisAttr;
+        sectionScroll($thisId, 'slow');
     });
 
     // Button top

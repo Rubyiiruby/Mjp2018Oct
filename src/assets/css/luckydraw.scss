@@ -1,0 +1,406 @@
+#luckydrawSec {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    background: {
+        color: #abebd3;
+        image: url("../images/section-01/bgPattern.png");
+        repeat: repeat;
+        size: 119px 124px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 49%;
+        width: 100%;
+        padding-bottom: 17%;
+        background: {
+            image: url("../images/section-06/luckydrawWave.png");
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #faf3bf;
+    }
+}
+
+.luckydrawContainer {
+    width: 90%;
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    padding: 100px 0;
+    .titleWrapper {
+        position: relative;
+        width: 90%;
+        max-width: 1076px;
+        margin: 0 auto;
+        .KHSlogo {
+            width: 60%;
+            max-width: 580px;
+        }
+        .titleWording {
+            padding-top: 20px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 22.858%;
+            padding-bottom: 6.112%;
+            transform: translate(0, -40%);
+            background: {
+                image: url("../images/section-06/luckydrawDeco.png");
+                repeat: no-repeat;
+                size: cover;
+                position: center;
+            }
+        }
+    }
+    .containFrame {
+        width: 100%;
+        background-color: #81d4b5;
+        margin-top: 60px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .contentWrapper {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .luckydrawForm {
+        width: 100%;
+        max-width: 770px;
+        margin: 0 auto;
+        text-align: center;
+        h3 {
+            font-size: 24px;
+            letter-spacing: 10px;
+            line-height: 1.5em;
+        }
+        form {
+            margin-top: 40px;
+        }
+        label {
+            display: block;
+            margin: 0px 0px 20px 0px;
+            >span {
+                width: 180px;
+                font-size: 24px;
+                font-weight: bold;
+                text-align: left;
+                float: left;
+                padding-top: 2px;
+                padding-right: 5px;
+            }
+            &.field4 {
+                display: inline-block;
+                width: 60%;
+                input {
+                    width: 50%;
+                }
+            }
+            &.field5 {
+                display: inline-block;
+                width: 39%;
+                >span {
+                    width: 160px;
+                }
+                input {
+                    width: 30%;
+                }
+            }
+        }
+        input {
+            width: 70%;
+            font-size: 20px;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 7px;
+            outline: none;
+            &:focus {
+                border: 1px solid #81d4b5;
+            }
+            &[type=submit] {
+                border: none;
+                width: auto;
+                padding: 8px 60px;
+                margin: 0 auto;
+                background-color: #81d4b5;
+                font-size: 24px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                cursor: pointer;
+                @media screen and (min-width: 1025px) {
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .remark {
+            color: #fd0000;
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+    }
+    .agreement {
+        margin: 40px auto;
+        input {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        label {
+            width: auto;
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            span.circle {
+                width: 20px;
+                height: 20px;
+                border: 2px solid #333333;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-top: 6px;
+            }
+        }
+        #agreement:checked+label span {
+            background: #81d4b5;
+        }
+    }
+    .divider {
+        width: 80%;
+        height: 3px;
+        background-color: #00ff9f;
+        margin: 60px auto;
+    }
+    .termsWrapper {
+        width: 90%;
+        margin: 0 auto;
+        letter-spacing: 2px;
+        font-size: 40px;
+        h3 {
+            font-size: 1em;
+            font-weight: 700;
+            text-align: center;
+        }
+        p {
+            display: block;
+            font-size: 0.5em;
+            font-weight: 700;
+            padding-top: 40px;
+            line-height: 1.5em;
+            &.remarks {
+                color: #fd0000;
+                padding-top: 20px;
+            }
+        }
+    }
+    .offerBike {
+        float: right;
+        width: 31.35%;
+        padding-bottom: 22.52%;
+        margin-top: 20px;
+        background: {
+            image: url("../images/section-06/offerBike.png");
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+    .eventList {
+        padding-top: 60px;
+        >li {
+            position: relative;
+            font-size: 0.7em;
+            font-weight: 700;
+            line-height: 1.5em;
+            padding-bottom: 30px;
+            padding-left: 65px;
+            p {
+                padding: 10px 0 20px;
+                font-size: 0.65em;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                vertical-align: middle;
+                width: 49px;
+                height: 48px;
+                background: {
+                    image: url("../images/section-06/luckydrawIcon.png");
+                    repeat: no-repeat;
+                }
+            }
+        }
+    }
+    ol {
+        padding-left: 30px;
+        li {
+            color: #8f8f8f;
+            font-size: 0.715em;
+            font-weight: normal;
+            line-height: 1.5em;
+            list-style-type: decimal;
+            padding-top: 20px;
+        }
+    }
+}
+
+// Responsive settings
+@media screen and (max-width: 1024px) {
+    .luckydrawContainer {
+        padding: 60px 0;
+        .containFrame {
+            margin-top: 40px;
+        }
+        .luckydrawForm {
+            h3 {
+                font-size: 20px;
+                letter-spacing: 4px;
+            }
+            label {
+                >span {
+                    width: 150px;
+                    font-size: 20px;
+                }
+                &.field4,
+                &.field5 {
+                    display: block;
+                    width: 100%;
+                    >span {
+                        width: 150px;
+                    }
+                    input {
+                        width: 70%;
+                    }
+                }
+            }
+            .remark {
+                font-size: 18px;
+            }
+        }
+        .agreement label {
+            font-size: 20px;
+        }
+        .termsWrapper {
+            width: 95%;
+            font-size: 36px;
+        }
+        .eventList>li {
+            padding-left: 50px;
+            &::before {
+                width: 40px;
+                height: 40px;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .luckydrawContainer {
+        .titleWrapper {
+            &::before {
+                content: none;
+            }
+            .KHSlogo {
+                width: 100%;
+            }
+        }
+        .containFrame {
+            padding: 4px;
+        }
+        .contentWrapper {
+            padding: 25px;
+        }
+        .luckydrawForm {
+            h3 {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+            form {
+                margin-top: 25px;
+            }
+            label>span,
+            input,
+            label.field4>span,
+            label.field5>span,
+            label.field4 input,
+            label.field5 input {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            .remark {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+        .agreement {
+            margin: 20px auto;
+            label {
+                font-size: 17px;
+                letter-spacing: 0;
+                span.circle {
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 4px;
+                }
+            }
+        }
+        .termsWrapper {
+            width: 100%;
+            font-size: 32px;
+            letter-spacing: 0;
+            p {
+                padding-top: 25px;
+            }
+            .offerBike {
+                display: block;
+                float: none;
+                width: 90%;
+                margin: 25px auto;
+                padding-bottom: 66%;
+            }
+            .eventList {
+                padding-top: 20px;
+                >li {
+                    padding-left: 34px;
+                    padding-bottom: 20px;
+                    &::before {
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+            ol {
+                padding-left: 0;
+                li {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
