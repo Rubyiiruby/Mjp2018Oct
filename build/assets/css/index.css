@@ -337,7 +337,7 @@
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #cccccc;
           box-shadow: 0 0 10px #cccccc;
-  padding: 10px;
+  padding: 9px;
 }
 
 .routeMap > div .routeCircle::before {
