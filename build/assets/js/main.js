@@ -112,6 +112,13 @@ $(function () {
         sectionScroll($thisId, 'slow');
     });
 
+    // KV button click
+    $('.kvSlogan .kvBtn').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#sectionLottery').offset().top - 60
+        }, 'slow');
+    });
+
     // Button top
     if (window.matchMedia("(min-width: 768px)").matches) {
         $(window).on('scroll', function () {

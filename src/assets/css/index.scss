@@ -75,7 +75,7 @@
     width: 100%;
     display: block;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .sectionOne {
@@ -218,27 +218,35 @@
     .kvSlogan {
         float: right;
         width: 40%;
-        padding: 11% 0;
+        padding: 5.5% 0;
         position: relative;
         margin-right: -2%;
+        text-align: center;
         img {
             width: 100%;
             max-width: 588px;
             margin: 0 auto;
         }
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     width: 39%;
-        //     height: 25%;
-        //     top: 26%;
-        //     right: -9%;
-        //     background: {
-        //         image: url("../images/section-01/kvSlogan-deco.png");
-        //         repeat: no-repeat;
-        //         size: 100%;
-        //     }
-        // }
+        .kvBtn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 30px;
+            background-color: #fabe00;
+            // border: 1px solid #e50012;
+            color: #ffffff;
+            border-radius: 6px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            @media screen and (min-width: 1025px) {
+                &:hover {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    // color: #ffffff;
+                    // border: 1px solid #ffffff;
+                }
+            }
+        }
     }
     &::after {
         content: '';
