@@ -515,7 +515,7 @@
             display: inline-block;
             vertical-align: middle;
             background-color: #939393;
-            width: 15%;
+            width: 10%;
             height: 3px;
             position: absolute;
             top: 50%;
@@ -777,6 +777,24 @@
             }
         }
     }
+    .exLinkage {
+        width: 100%;
+        padding-top: 80px;
+        text-align: center;
+        >ul li {
+            display: inline-block;
+            padding: 20px;
+            transition: opacity .3s;
+            @media screen and (min-width: 1025px) {
+                &:hover {
+                    opacity: .6;
+                }
+            }
+            img {
+                width: auto;
+            }
+        }
+    }
 }
 
 footer {
@@ -849,7 +867,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
     .subTitle img {
-        max-height: 90px;
+        max-height: 80px;
     }
     .routeMap {
         >div {
@@ -942,6 +960,12 @@ footer {
             width: 10.3%;
             padding-bottom: 11.4%;
             transform: translate(-115%, -20%);
+        }
+    }
+    .sectionSix .exLinkage {
+        padding-top: 40px;
+        >ul li img {
+            max-height: 50px;
         }
     }
 }

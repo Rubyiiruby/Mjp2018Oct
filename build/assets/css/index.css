@@ -579,7 +579,7 @@
   display: inline-block;
   vertical-align: middle;
   background-color: #939393;
-  width: 15%;
+  width: 10%;
   height: 3px;
   position: absolute;
   top: 50%;
@@ -883,6 +883,30 @@
   letter-spacing: 2px;
 }
 
+.sectionSix .exLinkage {
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.sectionSix .exLinkage > ul li {
+  display: inline-block;
+  padding: 20px;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+@media screen and (min-width: 1025px) {
+  .sectionSix .exLinkage > ul li:hover {
+    opacity: .6;
+  }
+}
+
+.sectionSix .exLinkage > ul li img {
+  width: auto;
+}
+
 footer {
   background-image: url("../images/bgWhite.jpg");
   background-repeat: repeat;
@@ -949,7 +973,7 @@ footer .bottomVisual {
 
 @media screen and (max-width: 1024px) {
   .subTitle img {
-    max-height: 90px;
+    max-height: 80px;
   }
   .routeMap > div {
     max-width: 514px;
@@ -1034,6 +1058,12 @@ footer .bottomVisual {
     -webkit-transform: translate(-115%, -20%);
         -ms-transform: translate(-115%, -20%);
             transform: translate(-115%, -20%);
+  }
+  .sectionSix .exLinkage {
+    padding-top: 40px;
+  }
+  .sectionSix .exLinkage > ul li img {
+    max-height: 50px;
   }
 }
 
