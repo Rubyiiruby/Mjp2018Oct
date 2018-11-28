@@ -883,6 +883,11 @@
   letter-spacing: 2px;
 }
 
+.sectionSix .offerContent span {
+  color: red;
+  font-weight: 700;
+}
+
 .sectionSix .exLinkage {
   width: 100%;
   padding-top: 80px;
